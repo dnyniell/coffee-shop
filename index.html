@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Public Style */
+    body{
+        font-family: poppins;
+        margin: 0;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Navbar */
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0 100px;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 10px 8px rgba(0,0,0,0.15); 
+        margin-bottom: 8px;
+    }
+
+    .nav-logo img{
+        margin: 10px 60px;
+        width: 80px;
+        height: 85px;
+    }
+
+    .nav-item ul{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .nav-item ul li a{
+        display: flex;
+        color: black;
+        gap: 10px;
+    }
+
+    .nav-item{
+        align-items: center;
+        font-size: 16px;
+    }
+
+    /* Hero */
+    .hero-container{
+        margin-top: 0px;
+        background-image: url('image/hero-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 620px;
+    }
+    
+    .hero-overlay{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.35);
+        justify-content: center;
+    }
+    
+    .hero-text{
+        color: white;
+        flex: 1;
+        text-align: center;
+    }
+    .hero-text h1{
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 50px;
+        color: wheat;
+    }
+
+    .hero-image{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .hero-btn{
+        margin-top: 110px;
+        padding: 13px 30px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: none;
+        border-radius: 1;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    /* About Us */
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0 100px;
+        height: 500px;
+    }
+
+    .about-header h1{
+        margin-top: 0px;
+    }
+    .vision-mission{
+        display: flex;
+    }
+
+    .about-vision{
+        flex: 1;
+    }
+
+    .about-image{
+        flex: 1;
+    }
+    .about-image img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-mission{
+        flex: 1;
+    }
+    .vision-icons{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+     .vision-icons img{
+        border: 3.5px solid rgb(217, 188, 24);
+        padding: 10px;
+        border-style: double;
+        border-radius: 50px;
+     }
+     
+     .video-preview{
+        object-fit: fill;
+        height: 105vh;
+        width: 100%;
+        margin-top: 100px;
+     }
+</style>
+<body>
+    <!-- Navbar -->
+    <section class="nav-container">
+        <!-- Left Side -->
+        <div class="nav-logo">
+            <a href="#"><img src="image/malaya_coffee.png" alt="Caction Nav Logo" title="Malaya Coffee"></a>
+        </div>
+        <div class="nav-quotes">
+            <h3>Fresh Brewed Coffee is Served</h3>
+        </div>
+        <!-- Right Side -->
+        <div class="nav-item">
+            <ul>
+                <li><a href="#"><img src="image/home-nav.png" alt="" width="15" height="20">Home</a></li>
+                <li><a href="#"><img src="image/about-nav.png" alt="" width="15" height="20">About</a></li>
+                <li><a href="#"><img src="image/coffee-nav.png" alt="" width="15" height="20">Coffee</a></li>
+                <li><a href="#"><img src="image/support-nav.png" alt="" width="15" height="20">Support</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+     <section class="hero-container">
+        <div class="hero-overlay">
+            <!-- Hero Text Section -->
+            <div class="hero-text">
+                <h1>The Best Coffee in Town !</h1>
+                <p>We are delighted to serve and to deliver the best quality of our coffee recipes</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident eius modi tempora voluptatem reprehenderit eaque impedit excepturi fugiat eligendi.</p>
+                <button class="hero-btn">TRY NOW</button>
+            </div>
+            
+            <!-- Coffee Image Slider-->
+            <div class="hero-image">
+                <img src="" alt="">
+            </div>
+        </div>
+     </section>
+
+     <!-- About Us -->
+      <section class="about-container">
+        <div class="about-header">
+                <h1>About Us</h1>
+            </div>
+            <div class="vision-mission">
+                <div class="about-vision">
+                    <h2>Our Vision</h2>
+                    <p>To design coffee as an experience of depth, where flavor, culture, and emotion are crafted into a single moment</p>
+                </div>
+                <div class="about-image">
+                    <img src="image/malaya_coffee.png" alt="">
+                </div>
+                <div class="about-mission">
+                    <h2>Our Mission</h2>
+                    <p>We craft intentional coffee experiences that bring people closer—to themselves, to others, and to the moment</p>
+                </div>
+            </div>
+            <div class="vision-icons">
+                <img src="image/emoticon.png" alt="" width="50" height="50">
+                <img src="image/coffee.png" alt="" width="50" height="50">
+                <img src="image/cultural.png" alt="" width="50" height="50">
+                <img src="image/happy.png" alt="" width="50" height="50">
+                <img src="image/organic.png" alt="" width="50" height="50">
+                <img src="image/like.png" alt="" width="50" height="50">
+            </div>
+      </section>
+      <section class="marketing">
+        <video autoplay muted loop playsinline class="video-preview">
+            <source src="image/marketing_coffee.mp4">
+        </video>
+
+        <div class="content-on-video">
+            <h1>Malaya Coffee</h1>
+            <p>Premium quality coffee experience</p>
+        </div>
+      </section>
+</body>
+</html>
