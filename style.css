@@ -1,0 +1,157 @@
+/* Public Style */
+    *{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        font-family: poppins;
+        margin: 0;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Navbar */
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0 100px;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 10px 8px rgba(0,0,0,0.15); 
+        margin-bottom: 8px;
+    }
+
+    .nav-logo img{
+        margin: 10px 60px;
+        width: 80px;
+        height: 85px;
+    }
+
+    .nav-item ul{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .nav-item ul li a{
+        display: flex;
+        color: black;
+        gap: 10px;
+    }
+
+    .nav-item{
+        align-items: center;
+        font-size: 16px;
+    }
+
+    /* Hero */
+    .hero-container{
+        margin-top: 0px;
+        background-image: url('image/hero-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 620px;
+    }
+    
+    .hero-overlay{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.35);
+        justify-content: center;
+    }
+    
+    .hero-text{
+        color: white;
+        flex: 1;
+        text-align: center;
+    }
+    .hero-text h1{
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 50px;
+        color: wheat;
+    }
+
+    .hero-image{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .hero-btn{
+        margin-top: 110px;
+        padding: 13px 30px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: none;
+        border-radius: 1;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    /* About Us */
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* justify-content: center; */
+        padding: 20px 100px;
+        height: 100vh;
+    }
+
+    .about-header h1{
+        margin-top: 0px;
+        padding-top: 80px;
+    }
+    .vision-mission{
+        display: flex;
+    }
+
+    .about-vision{
+        flex: 1;
+    }
+
+    .about-image{
+        flex: 1;
+    }
+    .about-image img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-mission{
+        flex: 1;
+    }
+    .vision-icons{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+     .vision-icons img{
+        border: 3.5px solid rgb(217, 188, 24);
+        padding: 10px;
+        border-style: double;
+        border-radius: 50px;
+     }
+     
+     .video-preview{
+        object-fit: fill;
+        height: 105vh;
+        width: 100%;
+        /* margin-top: 100px; */
+     }
+     .marketing{
+        background-color: black;
+     }
+     .content-on-video{
+        background-color: black;
+     }
